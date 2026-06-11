@@ -1,0 +1,6 @@
+pathlib
+python-telegram-bot==21.10
+openai==1.61.0
+logging
+telegram
+dotenv
