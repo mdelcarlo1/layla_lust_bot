@@ -5,7 +5,7 @@ from openai import OpenAI
 
 # 1. Paste your secret keys here
 TELEGRAM_TOKEN = "8688569021:AAEZWUbg2DYUhXekhdUHmuGvTojirjGU0hM"
-OPENAI_KEY = "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"
+OPENAI_KEY = "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"
 
 # 2. Initialize the OpenAI Client
 ai_client = OpenAI(api_key=OPENAI_KEY)
