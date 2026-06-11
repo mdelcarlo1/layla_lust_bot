@@ -9,6 +9,7 @@ TELEGRAM_TOKEN = "8688569021:AAEZWUbg2DYUhXekhdUHmuGvTojirjGU0hM"
 
 # 2. Initialize the OpenAI Client
 load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 ai_client = OpenAI(api_key=OPENAI_API_KEY)
 
 # 3. Configure logging so you can see errors in your terminal
