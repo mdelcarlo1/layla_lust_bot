@@ -1,4 +1,6 @@
+import os
 import logging
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from openai import OpenAI
@@ -7,6 +9,7 @@ from openai import OpenAI
 TELEGRAM_TOKEN = "8688569021:AAEZWUbg2DYUhXekhdUHmuGvTojirjGU0hM"
 
 # 2. Initialize the OpenAI Client
+load_dotenv()
 ai_client = OpenAI(api_key=OPENAI_API_KEY)
 
 # 3. Configure logging so you can see errors in your terminal
